@@ -3,29 +3,120 @@
   <head>
       <meta charset="utf-8"/>
       <title>Casa criativa</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <img src="./imagens/logo.png" alt="">
-    <p>
-      Fica em casa em períodos longos, não é fácil.
-    </p>
+    <div id="container">
 
-    <p>
-      Por isso, iremos catalogar ideias, <strong> brincadeiras, jogos, filmes,
-      livros, cursos, dicas</strong> e tudo que for necessario para tornar esse
-      momento mais interressante.
-    </p>
+      <section id="intro">
+        <header>
+          <img src="./imagens/logo.png" alt="">
+        </header>
+        <main>
+          <p>
+            Fica em casa em períodos longos, não deve ser nada fácil.
+          </p>
+      
+          <p>
+            Por isso, iremos catalogar ideias, <strong> brincadeiras, jogos, filmes,
+            livros, cursos, dicas</strong> e tudo que for necessario para tornar esse
+            momento mais interressante.
+          </p>
+      
+          <p>
+            Comece clicando em ver ideias para ver as ideias cadastrads e contribua
+            adicionando a sua ideia.
+          </p>
+        </main>
 
-    <p>
-      Comece clicando em ver ideias para ver as ideias cadastrads e contribua
-      adicionando a sua ideia.
-    </p>
-    <button>+ Adicionar Ideias</button>
-    <button class="fat">Ver ideias</button>
+        <section id="button">
+          <button onclick="onOff()">+ Adicionar Ideias</button>
+          <button class="fat">Ver ideias</button>
+        </section>
+    
+        <footer>
+          Com &#128152 <a href="http://rocketseat.com.br">Rocketseat</a>
+        </footer>
+      </section>
+      <section id="last-ideias">
+        <div class="idea">
+          <img 
+            src="https://image.flaticon.com/icons/svg/2729/2729007.svg" 
+            alt="Imagens de curso de programação">
+          <div class="content">
+            <h3>Curso de programação</h3>
+            <p>Estudo</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium sunt earum sed iste a, saepe omnis illo deleniti error non velit hic architecto placeat ipsa ipsum, aliquid, ratione dolore eveniet?
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+        <div class="idea">
+          <img 
+            src="https://image.flaticon.com/icons/svg/2761/2761891.svg" 
+            alt="Exercicio">
+          <div class="content">
+            <h3>Exercicio</h3>
+            <p>Saúde</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium sunt earum sed iste a, saepe omnis illo deleniti error non velit hic architecto placeat ipsa ipsum, aliquid, ratione dolore eveniet?
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+        <div class="idea">
+          <img 
+            src="https://image.flaticon.com/icons/svg/2741/2741113.svg" 
+            alt="Jogar online">
+          <div class="content">
+            <h3>Jogar online</h3>
+            <p>Lazer</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium sunt earum sed iste a, saepe omnis illo deleniti error non velit hic architecto placeat ipsa ipsum, aliquid, ratione dolore eveniet?
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="hide">
+      <div class="content">
+        <h1>Nova idea</h1>
+        <form action="">
+          <div class="input-wrapper">
+            <label for="title">Título da idea</label>
+            <input type="text" name="title">
+          </div>
 
-    <p id="footer">Com &#128152 <a href="http://rocketseat.com.br">Rocketseat</a></p>
+          <div class="input-wrapper">
+            <label for="category">Categoria</label>
+            <input type="text" name="category">
+          </div>
 
+          <div class="input-wrapper">
+            <label for="image">Link da image</label>
+            <input type="url" name="image">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="description">Digite uma descrição para essa idea</label>
+            <textarea name="description" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="link">Link da idea</label>
+            <input type="url" name="link">
+          </div>
+
+          <a href="#" onclick="onOff()">Voltar</a>
+          <button>Salvar</button>
+
+        </form>
+      </div>
+    </div>
     <script src="scripts.js"></script>
   </body>
 </html>
