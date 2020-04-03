@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ideias WS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-ideas">
+
+  <div id="container">
+    <header>
+      <a href="index.html">
+        <img src="./imagens/logo.png" alt="Imagem da Logomarca">
+      </a>
+      <nav>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
+      </nav>
+    </header>
+    <section id="title">
+      <p>Em exibição</p>
+      <h1>Ideias</h1>
+    </section>
+    <main>
+      <section id="ideas">
+        <div class="idea">
+          <img 
+            src="https://image.flaticon.com/icons/svg/2729/2729007.svg" 
+            alt="Imagens de curso de programação">
+          <div class="content">
+            <h3>Curso de programação</h3>
+            <p>Estudo</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium sunt earum sed iste a, saepe omnis illo deleniti error non velit hic architecto placeat ipsa ipsum, aliquid, ratione dolore eveniet?
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+        <div class="idea">
+          <img 
+            src="https://image.flaticon.com/icons/svg/2761/2761891.svg" 
+            alt="Exercicio">
+          <div class="content">
+            <h3>Exercicio</h3>
+            <p>Saúde</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium sunt earum sed iste a, saepe omnis illo deleniti error non velit hic architecto placeat ipsa ipsum, aliquid, ratione dolore eveniet?
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+        <div class="idea">
+          <img 
+            src="https://image.flaticon.com/icons/svg/2741/2741113.svg" 
+            alt="Jogar online">
+          <div class="content">
+            <h3>Jogar online</h3>
+            <p>Lazer</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium sunt earum sed iste a, saepe omnis illo deleniti error non velit hic architecto placeat ipsa ipsum, aliquid, ratione dolore eveniet?
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+        <div class="idea">
+          <img 
+            src="https://image.flaticon.com/icons/svg/2729/2729007.svg" 
+            alt="Imagens de curso de programação">
+          <div class="content">
+            <h3>Curso de programação</h3>
+            <p>Estudo</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium sunt earum sed iste a, saepe omnis illo deleniti error non velit hic architecto placeat ipsa ipsum, aliquid, ratione dolore eveniet?
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Com &#128152 <a href="http://rocketseat.com.br" target="_blank">Rocketseat</a>
+    </footer>
+  </div>
+
+
+     <!-- Modal -->
+  <div id="modal" class="hide">
+    <div class="content">
+      <h1>Nova idea</h1>
+      <form action="">
+        <div class="input-wrapper">
+          <label for="title">Título da idea</label>
+          <input type="text" name="title">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="category">Categoria</label>
+          <input type="text" name="category">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="image">Link da image</label>
+          <input type="url" name="image">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="description">Digite uma descrição para essa idea</label>
+          <textarea name="description" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="link">Link da idea</label>
+          <input type="url" name="link">
+        </div>
+
+        <a href="#" onclick="onOff()">Voltar</a>
+        <button>Salvar</button>
+
+      </form>
+    </div>
+  </div>
+</body>
+</html>
