@@ -149,10 +149,10 @@ footer a {
   
   position: absolute;
   top: 0;
-
+  bottom: 0;
   right: 0;
   left: 0;
-  
+
   display: flex;
   justify-content: center;
 
@@ -164,12 +164,13 @@ footer a {
 }
 
 #modal .content{
-  margin-top: 15%; 
+  margin-top: 5%; 
   color: #fff;
 }
 
 #modal .content h1 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 #modal form{
@@ -213,7 +214,7 @@ form a{
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: bold;
   border-radius: 6px;
   align-self: end;
   transition: 400ms;
